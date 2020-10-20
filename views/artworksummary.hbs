@@ -1,0 +1,10 @@
+
+<ul>
+  {{#each art}}
+    <div>
+      <a href="/artwork/{{id}}"><li>{{title}}</li></a>
+      <ul><a href={{artist.url}}>{{artist.name}}</a></ul>
+      <ul><a href={{license.url}}>{{license.name}}</a></ul>
+    </div>
+  {{/each}}
+</ul>
